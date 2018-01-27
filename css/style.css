@@ -1,0 +1,227 @@
+body {
+	background: url(/especiales/viu-100/img/bg-pattern.jpg) repeat;
+    font-style: normal;
+    font-weight: normal;
+	margin: 0;  
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+}
+ul,li{
+	list-style-type: none;
+	padding: 0;
+}
+input{
+	color: transparent;
+}
+
+@font-face {
+    font-family: 'glosa_displaybold_italic';
+    src: url('/especiales/viu-100/fonts/glosadisplay-bold_italic-webfont.eot');
+    src: url('/especiales/viu-100/fonts/glosadisplay-bold_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/especiales/viu-100/fonts/glosadisplay-bold_italic-webfont.woff2') format('woff2'),
+         url('/especiales/viu-100/fonts/glosadisplay-bold_italic-webfont.woff') format('woff'),
+         url('/especiales/viu-100/fonts/glosadisplay-bold_italic-webfont.ttf') format('truetype'),
+         url('/especiales/viu-100/fonts/glosadisplay-bold_italic-webfont.svg#glosa_displaybold_italic') format('svg');
+}
+
+.clear{
+	clear: both;
+}
+
+.header{
+	background: #ee2a58;
+	position: relative;
+}
+	.ctn-header{
+		margin: 0 auto;
+		max-width: 1000px;
+		position: relative;
+	}
+		.logo-comercio{			
+			text-align: center;
+		}
+			.logo-comercio a{
+				background: url(/especiales/viu-100/img/sprites.png) no-repeat 0 0;
+				float: left;
+			    height: 26px;
+			    margin: 10px 0;
+			    text-indent: -99999px;
+			    width: 168px;
+			}
+		#social{
+			position: absolute;
+			right: 45px;
+			top: 0;
+		}
+			#social ul{
+				display: inline-block;
+				margin: 10px 0;
+				padding: 0;
+			}
+				#social ul li{
+					display: inline-block;
+					vertical-align: top;
+				}
+					#social ul li a{
+						display: block;
+						height: 31px;
+						margin: 0 2px;
+						text-indent: -99999px;
+						width: 31px;
+					}
+						#social ul li a#facebook{
+							background: url(/especiales/viu-100/img/sprites.png) no-repeat 0 -33px;
+						}
+							#social ul li a#facebook:hover{
+								background: url(/especiales/viu-100/img/sprites.png) no-repeat 0 -67px;
+							}
+						#social ul li a#twitter{
+							background: url(/especiales/viu-100/img/sprites.png) no-repeat -37px -33px;
+						}
+							#social ul li a#twitter:hover{
+								background: url(/especiales/viu-100/img/sprites.png) no-repeat -37px -67px;
+							}
+.contenedor{
+	margin: 0 auto;
+	width: 1000px;
+}
+	.box-cabecera{
+		margin: 40px auto;
+	}
+		.texto-header{
+			display: inline-block;
+    		margin: 45px 50px;
+    		vertical-align: top;
+		}
+		p.texto-movil{
+			display: none;
+		}
+	.box-foto{
+		background: url(/especiales/viu-100/img/box-foto.jpg) no-repeat 0 0;
+		height: 790px;
+		position: relative;
+		width: 1000px;
+	}
+		.box-image-upload{
+			cursor: move;
+			height: 610px;
+			overflow: hidden;
+			position: absolute;
+			right: 39px;
+			top: 52px;
+			width: 482px;
+		}
+			.avatar-revista{
+				background: url(/especiales/viu-100/img/avatar-revista.png) no-repeat 0 0;
+				height: 610px;
+				position: absolute;
+				width: 482px;
+				z-index: 10;
+			}
+				img#upload{
+					border: none;
+					/*margin-left: -50%; */
+					/*-width: 126%;*/
+				}
+		.botones{
+			bottom: 15px;
+			margin: 0 auto;
+			position: absolute;
+			right: 135px;
+		}
+			.boton{
+				cursor: pointer;
+				display: inline-block;
+				height: 86px;
+				vertical-align: top;
+				width: 86px;
+			}
+				.boton-1{
+					background: url(/especiales/viu-100/img/sprites.png) no-repeat 0 -102px;
+					border: none;
+					height: 86px;
+					text-indent: -9999px;
+    				width: 86px;
+				}
+				.boton-2{
+					background: url(/especiales/viu-100/img/sprites.png) no-repeat -99px -102px;
+				}
+				.boton-3{
+					background: url(/especiales/viu-100/img/sprites.png) no-repeat -197px -102px;
+				}
+
+.footer{
+	background: #ee2a58;
+	margin: 50px 0 0;
+	padding: 25px 0 40px;
+	width: 100%;
+}
+	.footer a{
+		background: url(/especiales/viu-100/img/sprites.png) no-repeat 0 0;
+		display: block;
+		height: 26px;
+		margin: 0 auto;
+		text-indent: -9999px;
+	    width: 168px;
+	}
+
+
+.wraptocenter {
+	display: table-cell;
+	height: 610px;
+  	text-align: center;
+  	vertical-align: middle;
+    width: 482px;    
+}
+.wraptocenter * {
+	vertical-align: middle;
+}
+
+.box-image-upload:hover .avatar-revista{	
+	z-index: -1;
+}
+
+
+@media (max-width: 736px){
+	
+	.logo-comercio{
+		padding: 10px 0;
+	}
+		.logo-comercio a{
+			display: block;
+			float: inherit;
+			margin: 0 auto;
+		}
+	#social,
+	.texto-header,
+	.box-foto,
+	.footer{
+		display: none;
+	}
+	.contenedor{
+		width: 100%;
+	}
+		.box-cabecera {
+		    margin: 25px auto;
+		}
+			.texto-viu{
+				display: block;
+				margin: 0 auto;
+				vertical-align: top;
+			}
+			p.texto-movil{
+				border-bottom: #ef2b58 2px solid;
+				border-top: #ef2b58 2px solid;
+				color: #636466;
+				display: block;
+				font: 32px/36px 'glosa_displaybold_italic';
+				margin: 20px;
+				padding: 5px;
+				text-align: center;
+			}
+
+}
